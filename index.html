@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body {
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           margin: 0;
+       }
+
+       img {
+            
+            max-width: 100%;
+            background-color: rgb(101, 153, 233);
+            border-radius: 5%;
+       }
+
+
+       .container {
+           width: 80%;
+           max-width: 960px;
+           margin: 0 auto;
+           
+       }
+
+       
+       .columns {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           margin-bottom: 2em;
+           
+           
+       }
+
+       .col {
+           width: 15%;
+           border:  solid rgba(0, 0, 0, 0.030);
+           border-radius: 5%;
+       }
+
+       
+       
+       p {
+           text-align: justify;
+       }
+
+       .col>p {
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        /*
+        @media  (max-width: 1024px) {
+            .col {
+                width: 20% ;
+                
+            }
+            
+        }*/
+
+        @media screen and (max-width: 768px) {
+                .columns{
+                 justify-content: center;
+                }
+
+            .col {
+                width: 30%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .columns {
+                justify-content: center;
+            }
+            .col {
+                width: 100%;
+            }
+            
+        }
+       
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery Heading </h1>
+        
+        <div class="columns">
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            </div>
+            <div class="columns">
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+            <div class="col">
+                <img src="placeholder-image.png" alt="g">
+                <p>Image Title</p>
+            </div>
+        
+        </div>
+    
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    
+</body>
+</html>
